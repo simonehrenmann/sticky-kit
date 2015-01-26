@@ -73,7 +73,7 @@
             top: "",
             width: "",
             bottom: ""
-          }).removeClass(sticky_class);
+          }).removeClass(sticky_class).trigger("sticky_kit:unstick");
           restore = true;
         }
         top = elm.offset().top - (parseInt(elm.css("margin-top"), 10) || 0) - offset_top;

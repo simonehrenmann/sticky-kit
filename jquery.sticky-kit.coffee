@@ -63,7 +63,7 @@ $.fn.stick_in_parent = (opts={}) ->
             top: ""
             width: ""
             bottom: ""
-          }).removeClass(sticky_class)
+          }).removeClass(sticky_class).trigger("sticky_kit:unstick")
 
           restore = true
 
